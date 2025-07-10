@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <h2>🌦️ Weather Dashboard</h2>
+    <form method="post" action="/pred">
+        <input type="text" name="city" placeholder="Enter City Name" required>
+        <button type="submit">Get Weather</button>
+    </form>
+
+    {% if temp %}
+        <h3>Weather in {{ city }}</h3>
+        <p>Description: {{ description }}</p>
+        <p>Temperature: {{ temp }}°C</p>
+        <p>Humidity: {{ humidity }}%</p>
+        <p>Wind Speed: {{ wind_speed }} m/s</p>
+        <p>Max Temp: {{ max_temp }}°C</p>
+        <p>Min Temp: {{ min_temp }}°C</p>
+        <p>Pressure: {{ pressure }} hPa</p>
+        <p>Cloudiness: {{ cloudiness }}%</p>
+        <p>Sunrise: {{ sunrise }}</p>
+        <p>Sunset: {{ sunset }}</p>
+        {% if hot_alert %}
+            <p style="color:red">{{ hot_alert }}</p>
+        {% endif %}
+        {% if cold_alert %}
+            <p style="color:blue">{{ cold_alert }}</p>
+        {% endif %}
+        <img src="{{ image_url }}" width="400" alt="City Image">
+    {% endif %}
+</body>
+</html>
