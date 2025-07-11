@@ -158,3 +158,8 @@ git push
 - Make sure you have added .env to .gitignore
 - You can deploy on Render by connecting your GitHub repository
 - Twilio free accounts have daily limits — avoid exceeding them
+
+📧 Email: jaiprakasht694@gmail.com
+🔗 LinkedIn: linkedin.com/in/jaiprakash-tiwari-2a69992b0
+💻 GitHub: github.com/jaiprakashtt
+👉 Live Demo URL: https://weather-dashboard-bwse.onrender.com 
